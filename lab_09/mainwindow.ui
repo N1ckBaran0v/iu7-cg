@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>960</width>
+    <height>560</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>960</width>
+    <height>560</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Лабораторная работа 9</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="locale">
+   <locale language="Russian" country="Russia"/>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Triangular</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="3">
+     <widget class="QLabel" name="label_0">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string>Выбор цвета</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>744</width>
+        <height>17</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QLabel" name="label_1">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>131</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>131</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string>Цвет отрезков:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QPushButton" name="lineColorButton">
+      <property name="minimumSize">
+       <size>
+        <width>51</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>51</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <widget class="QLabel" name="label_2">
+      <property name="minimumSize">
+       <size>
+        <width>131</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>131</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string>Цвет отсекателя:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QPushButton" name="cutterColorButton">
+      <property name="minimumSize">
+       <size>
+        <width>51</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>51</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="2">
+     <widget class="QLabel" name="label_3">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>131</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>131</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string>Цвет результата:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QPushButton" name="resultColorButton">
+      <property name="minimumSize">
+       <size>
+        <width>51</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>51</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0" colspan="2">
+     <widget class="QLabel" name="label_6">
+      <property name="minimumSize">
+       <size>
+        <width>131</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>131</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string>Цвет фона:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QPushButton" name="fontColorButton">
+      <property name="minimumSize">
+       <size>
+        <width>51</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>51</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0" colspan="3">
+     <widget class="QLabel" name="label_20">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>191</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>191</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string>Многоугольник</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0" colspan="3">
+     <widget class="QLabel" name="label_18">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string>Добавление точки</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0" rowspan="2" colspan="2">
+     <widget class="QLabel" name="label_5">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string>x:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QLineEdit" name="lineEditX">
+      <property name="minimumSize">
+       <size>
+        <width>111</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>111</width>
+        <height>21</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0" rowspan="2" colspan="2">
+     <widget class="QLabel" name="label_19">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string>y:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="1">
+     <widget class="QLineEdit" name="lineEditY">
+      <property name="minimumSize">
+       <size>
+        <width>111</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>111</width>
+        <height>21</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="0" colspan="3">
+     <widget class="QPushButton" name="addDotButton">
+      <property name="minimumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string>Добавить</string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="0" colspan="3">
+     <widget class="QLabel" name="label_21">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>191</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>191</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string>Удаление точки</string>
+      </property>
+     </widget>
+    </item>
+    <item row="13" column="0" colspan="3">
+     <widget class="QComboBox" name="figureBox">
+      <property name="minimumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <item>
+       <property name="text">
+        <string>Не выбрана</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="14" column="0" colspan="3">
+     <widget class="QPushButton" name="delDotButton">
+      <property name="minimumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string>Удалить</string>
+      </property>
+     </widget>
+    </item>
+    <item row="15" column="0" colspan="3">
+     <widget class="QLabel" name="label_17">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>191</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>191</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string>Отсекатель</string>
+      </property>
+     </widget>
+    </item>
+    <item row="16" column="0" colspan="3">
+     <widget class="QLabel" name="label_14">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string>Добавление точки</string>
+      </property>
+     </widget>
+    </item>
+    <item row="17" column="0" rowspan="2" colspan="2">
+     <widget class="QLabel" name="label_4">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string>x:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="18" column="1">
+     <widget class="QLineEdit" name="lineEditXC">
+      <property name="minimumSize">
+       <size>
+        <width>111</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>111</width>
+        <height>21</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="19" column="0" rowspan="2" colspan="2">
+     <widget class="QLabel" name="label_15">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string>y:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="20" column="1">
+     <widget class="QLineEdit" name="lineEditYC">
+      <property name="minimumSize">
+       <size>
+        <width>111</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>111</width>
+        <height>21</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="21" column="0" colspan="3">
+     <widget class="QPushButton" name="addDotCutterButton">
+      <property name="minimumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string>Добавить</string>
+      </property>
+     </widget>
+    </item>
+    <item row="22" column="0" colspan="3">
+     <widget class="QLabel" name="label_16">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>191</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>191</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string>Удаление точки</string>
+      </property>
+     </widget>
+    </item>
+    <item row="23" column="0" colspan="3">
+     <widget class="QComboBox" name="cutterBox">
+      <property name="minimumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <item>
+       <property name="text">
+        <string>Не выбрана</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="24" column="0" colspan="3">
+     <widget class="QPushButton" name="delDotCutterButton">
+      <property name="minimumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string>Удалить</string>
+      </property>
+     </widget>
+    </item>
+    <item row="25" column="0" colspan="3">
+     <widget class="QPushButton" name="cutterButton">
+      <property name="minimumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string>Отсечь</string>
+      </property>
+     </widget>
+    </item>
+    <item row="26" column="0" colspan="3">
+     <widget class="QPushButton" name="discardButton">
+      <property name="minimumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string>Отменить</string>
+      </property>
+     </widget>
+    </item>
+    <item row="27" column="0" colspan="3">
+     <widget class="QPushButton" name="discardAllButton">
+      <property name="minimumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string>Сброс</string>
+      </property>
+     </widget>
+    </item>
+    <item row="28" column="0" colspan="3">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>168</width>
+        <height>21</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="29" column="0" colspan="3">
+     <widget class="QPushButton" name="aboutButton">
+      <property name="minimumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string>О программе</string>
+      </property>
+     </widget>
+    </item>
+    <item row="30" column="0" colspan="3">
+     <widget class="QPushButton" name="authorButton">
+      <property name="minimumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string>Об авторе</string>
+      </property>
+     </widget>
+    </item>
+    <item row="31" column="0" colspan="3">
+     <widget class="QPushButton" name="outButton">
+      <property name="minimumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>171</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="locale">
+       <locale language="Russian" country="Russia"/>
+      </property>
+      <property name="text">
+       <string>Выход</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
